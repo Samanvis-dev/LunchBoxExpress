@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "dev:client": "vite",
-    "dev:server": "nodemon server/index.js",
+    "dev:server": "nodemon server/index.cjs",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "db:migrate": "node server/database/migrate.js",
+    "db:migrate": "node server/database/migrate.cjs",
     "db:seed": "node server/database/seed.js"
   },
   "dependencies": {
